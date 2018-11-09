@@ -1,0 +1,32 @@
+{
+    "name": "liqunx/laravel-baidu",
+    "description": "baidu SDK for Laravel",
+    "keywords": ["baidu", "ai","laravel", "sdk"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liqunx",
+            "email": "1037861925@qq.com"
+        }
+    ],
+    "require": {
+        "illuminate/container": "^5.1",
+        "liqunx/baidu":"*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liqunx\\LaravelBaidu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Liqunx\\LaravelBaidu\\ServiceProvider"
+            ],
+            "aliases": {
+                "Baidu": "\\Liqunx\\LaravelBaidu\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
